@@ -2,7 +2,15 @@
 
 A household sustainability app for organizing appliances by room, recording usage, and comparing appliance models. Built from scratch by **Rishav Gadiyar** using React Native, Expo, TypeScript, and Firebase.
 
-The original repository was hosted under another account. This fork preserves that project history and presents my implementation.
+The original repository was hosted under another account. This repository preserves that project history and presents my implementation.
+
+## App preview
+
+Screenshots from the local Expo web app at a 390 × 844 mobile viewport.
+
+| Home | Kitchen | Dashboard |
+|---|---|---|
+| <img src="docs/screenshots/home.jpg" alt="Home screen with room navigation" width="240"> | <img src="docs/screenshots/kitchen.jpg" alt="Kitchen appliance selection screen" width="240"> | <img src="docs/screenshots/dashboard.jpg" alt="Dashboard with usage, summaries, and goals" width="240"> |
 
 ## Features
 
@@ -42,7 +50,13 @@ Use an Expo-compatible device or simulator. The repository also provides `npm ru
 
 Configure `firebase.ts` for your own Firebase project, enable email/password authentication, and configure Firestore access for authenticated user documents. Review the included Firestore rules before using a deployment with real user data.
 
-The repository has an Expo web launch script, but its public deployment URL and browser build have not yet been verified for this README.
+For the browser preview, run:
+
+```sh
+npm run web
+```
+
+The local web app has been checked at a mobile viewport for Home, Kitchen, and Dashboard navigation. Appliance persistence and account flows require Firebase configuration and authentication. The app has not been publicly deployed.
 
 ## Project structure
 
